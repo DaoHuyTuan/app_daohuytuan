@@ -24,7 +24,9 @@ cloneProject() {
 	fi
 
 	cd $path_app
-	git clone $gitProjectUrl
+	sshagent (credentials: ['deploy-dev']) {
+        	sh "git clone $gitProjectUrl"
+    	}
 	if [ ! $? -eq 0 ]; then
 		rmdir $path_app
     	exit 1
