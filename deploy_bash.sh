@@ -24,7 +24,7 @@ cloneProject() {
 	fi
 
 	cd $path_app
-	sshagent (credentials: ['deploy-dev']) {
+	sshagent (credentials: ['root']) {
         	sh "git clone $gitProjectUrl"
     	}
 	if [ ! $? -eq 0 ]; then
