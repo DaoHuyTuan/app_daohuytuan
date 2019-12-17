@@ -1,5 +1,4 @@
 #!/bin/bash
-ssh-add ~/.ssh/daipham
 export app='nodeapp_daohuytuan' # container & image name
 path_app="$HOME/daohuytuan"
 gitProjectName="app_daohuytuan"
