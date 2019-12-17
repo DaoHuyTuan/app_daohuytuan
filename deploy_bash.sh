@@ -1,6 +1,6 @@
 #!/bin/bash
 eval `ssh-agent -s`
-ssh-add -k /root/.ssh/daipham
+ssh-add -k ~/.ssh/daipham
 export app='nodeapp_daohuytuan' # container & image name
 path_app="$HOME/daohuytuan"
 gitProjectName="app_daohuytuan"
