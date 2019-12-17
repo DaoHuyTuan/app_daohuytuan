@@ -1,4 +1,5 @@
 #!/bin/bash
+eval "$(ssh-agent)"
 export app='nodeapp_daohuytuan' # container & image name
 path_app="$HOME/daohuytuan"
 gitProjectName="app_daohuytuan"
