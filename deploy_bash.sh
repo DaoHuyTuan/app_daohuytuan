@@ -1,7 +1,5 @@
 #!/bin/bash
 eval `ssh-agent -s`
-chmod 700 /root/.ssh
-chmod 600 /root/.ssh/*
 ssh-add -k /root/.ssh/daipham
 export app='nodeapp_daohuytuan' # container & image name
 path_app="$HOME/daohuytuan"
