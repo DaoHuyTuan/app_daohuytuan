@@ -8,9 +8,7 @@ services:
     container_name: nodeapp_daohuytuan
     ports:
       - '7001:7001'
-    networks:
-      - app_daohuytuan_net
 networks:
-  app_daohuytuan_net:
+  default:
     external:
-      name: custom_proxy
+      name: nodeapp_daohuytuan
