@@ -6,5 +6,9 @@ services:
       dockerfile: Dockerfile
     image: nodeapp_daohuytuan
     container_name: nodeapp_daohuytuan
+    networks:
+      default:
+        external:
+          name: nodeapp_daohuytuan
     ports:
       - '7001:7001'
