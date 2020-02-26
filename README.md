@@ -1,1 +1,1 @@
-dm con cho tuan 2
+list my app
